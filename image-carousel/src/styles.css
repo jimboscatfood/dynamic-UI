@@ -1,0 +1,57 @@
+.image-carousel {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    display:flex;
+    flex-direction: row;
+    width:max-content;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    display:none;
+    max-width: 300px;
+}
+
+.display {
+    display:initial;
+}
+
+.dot {
+    width: 15px; /* Or any desired size */
+    height: 15px; /* Must be equal to width */
+    border-radius: 50%;
+    border: solid 2px lightblue;
+    display: inline-block;
+    background-color: none;
+    margin:0 5px;
+}
+
+.active {
+    background-color: lightblue;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: transparent;
+}
+
+.next {
+    right:0;
+}
